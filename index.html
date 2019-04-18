@@ -32,9 +32,10 @@
       <h2><a href=".">Matteo Campo</a></h2>
       <p style="text-align:center">I like coding, physics, games, and any combination thereof. I work @JGU Mainz.</p>
       <ul>
-        <li><a href="./pages/art/">art</a> </li>
-        <li><a href="./pages/code/">code</a> </li>
-        <li><a href="./pages/science/">science</a> </li>
+        <li><a href="./pages/projects/">Projects</a> </li>
+        <li><a href="./pages/science/">Science</a> </li>
+        <li><a href="./pages/art/">Art</a> </li>
+        <li><a href="./pages/cv/">CV</a> </li>
       </ul>
     </div>
   </aside>
@@ -43,29 +44,227 @@
 
 <article>
   <div class="article_title">
-    <h1><a href="./articles/2019/01/04/welcome/">Welcome</a></h1>
+    <h1><a href="./articles/2019/04/18/projects/">Projects</a></h1>
   </div>
-  <div class="article_text">
-    <h3>Coding projects</h3>
-<table>
-<thead>
-<tr>
-<th><b><i>Rendara3D</i></b></th>
-<th><i>Cells</i></th>
-<th><i>Physgood</i></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img src="./img/shadows_demo_gif.gif" alt="demo_inst" width="100"/></td>
-<td><img src="./img/show_cell2.gif" alt="demo_inst" width="100"/></td>
-<td><img src="./img/shadows_demo_gif.gif" alt="demo_inst" width="100"/></td>
-</tr>
-</tbody>
-</table>
-<h3>Science</h3>
-<h3>Art</h3>
+<div class="article_text"> 
+  <h2>Rendara3D</h2>
+<p><img src="./img/demo_instancing.png" alt="demo_inst" width="600"/>
+<i>Rendara3D</i> is a 3D engine for drawing objects on the screen, written in C++ and modern OpenGL.</p>
+<p>You can download a demo <a href="https://dl.dropboxusercontent.com/s/bldd69moctoahwf/Rendara3D.zip?dl=0"><font color="blue">here</font></a> (requires Windows).</p>
+<p>Features include</p>
+<ul>
+<li> Loading of <b>3D models</b>. </li>
+<li> Diffuse, Normal, Specular <b>textures</b>. </li>
+<li> Directional <b>lights</b>, point lights and flashlights.</li>
+<li> Directional and Omnidirectional <b>shadow maps</b>.</li>
+<li> <b>Instanced rendering</b> of models. </li>
+</ul>
+
+<p>You can visit the github page of the project <a href="https://github.com/physteo/Rendara3D"> <font color="blue">here</font></a>.</p>
+<p><img src="./img/shadows_demo_gif.gif" alt="demo_inst" width="200"/>
+<img src="./img/outBreak.gif" alt="demo_inst" width="200"/></p>
+<p>&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;</p>
+<h1>Cells</h1>
+<p><i>Cells</i> is a C++/Python software for simulating the collective motion of biological cells crawling on a 2D substrate.</p>
+<p><img src="./img/show_cell1.gif" alt="cells1" width="300"/>
+<img src="./img/show_cell2.gif" alt="cells2" width="300"/></p>
+<p>The code has been designed to be flexible for testing out many different models.</p>
+<p>Features include
+<ul>
+<li> <b>Python</b> C++ interface for easy <b>scripting</b></li>
+<li> Integration of langevin equations of motion with <b>custom forces</b>. </li>
+<li> Cells can be composed of <b>multiple disks</b> (for now, maximum of 2). </li>
+<li> Contraction/Expansion <b>cycle of cell body</b> can be simulated. </li>
+<li> <b>Binary</b> format (HDF5) for saving files. </li>
+</ul></p>
+<p>I have developed <i>Cells</i> for <a href="https://arxiv.org/pdf/1901.06707.pdf"><font color="blue">this</font></a> scientific study.</p>
+<p>The github page of the project can be found <a href="https://github.com/physteo/cells"><font color="blue">here</font></a>.</p>
+<p>&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;</p>
+<h1>Physgood</h1>
+<p><i>Physgood</i> is a physics engine for games.</p>
+<p>It features
+<ul>
+<li> Integration of the equations of motion for particles (...soon for rigid bodies). </li>
+<li> <b>Continuous time detection</b> of sphere-sphere, sphere-edge, sphere-wall <b>collisions</b>. </li>
+<li> Acceleration of collision detection using fixed <b>space partitioning</b> and <b>hash mapping</b>.</li>
+<li> Collision response and <b>rigid body failsafe</b>. </li>
+</ul></p>
+<p><img src="./img/physgood.jpg" alt="physgood_show" width="600"/></p>
+<p>Demo: <i>coming soon </i>.</p>
+<h1></h1> 
+</div>
+</article>
+<hr />
+<article>
+  <div class="article_title">
+    <h1><a href="./articles/2019/04/18/science/">Science</a></h1>
   </div>
+<div class="article_text"> 
+  <h1>Publications</h1>
+<ul>
+  <li> <a href="https://arxiv.org/pdf/1901.06707.pdf" style="text-decoration: none"> <b> Campo, M.</b>, Schnyder, S. K., Molina, J. J., Speck, T., & Yamamoto, R. (2019). Spontaneous Spatiotemporal Ordering of Shape Oscillations Enhances Cell Migration. arXiv preprint arXiv:1901.06707. </a></li>
+</ul>
+
+<ul>
+  <li> <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.119.028004" style="text-decoration: none"> Pinchaipat, R., <b> Campo, M.</b>, Turci, F., Hallett, J. E., Speck, T., & Royall, C. P. (2017). Experimental evidence for a structural-dynamical transition in trajectory space. Physical review letters, 119(2), 028004. </a> </li>
+</ul>
+
+<ul>
+  <li><a href="https://iopscience.iop.org/article/10.1088/1742-5468/2016/8/084007/meta" style="text-decoration: none"> <b> Campo, M. </b>, & Speck, T. (2016). Polydisperse hard spheres: crystallization kinetics in small systems and role of local structure. Journal of Statistical Mechanics: Theory and Experiment, 2016(8), 084007.</a></li>
+</ul> 
+</div>
+</article>
+<hr />
+<article>
+  <div class="article_title">
+    <h1><a href="./articles/2019/04/18/art/">Art</a></h1>
+  </div>
+<div class="article_text"> 
+  <style>
+.container {
+    position: relative;
+    width: 47.75%;
+    float: left;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 80%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+
+    background-color: #000000;
+    color: white;
+    font-size: 0.8rem;
+    padding: 4px 4px;
+}
+
+</style>
+
+<h1>Covers</h1>
+<p><div class="container">
+  <img src="./img/cover-18-david.jpg" alt="cover1" width="300"/>
+  <div class="middle"> 
+   <a href="https://pubs.rsc.org/en/content/articlelanding/2018/sm/c8sm00389k#!divAbstract"> <div class="text">Richard et al. 2018.</div> </a>
+  </div> 
+</div></p>
+<div class="container">
+<img src="./img/cover-17-thom.jpg"  alt="cover2" width="300"/>
+  <div class="middle">
+   <a href="https://pubs.rsc.org/en/content/articlelanding/2017/sm/c7sm01737e#!divAbstract"> <div class="text">Wulfert et al. 2017.</div> </a>
+  </div>
+</div>
+
+<div class="container">
+<img src="./img/cover-18-ran.jpg"   alt="cover3" width="300"/>
+  <div class="middle">
+   <a href="https://pubs.rsc.org/en/content/articlelanding/2018/sm/c8sm00256h#!divAbstract"> <div class="text">Niu et al. 2018.</div> </a>
+  </div>
+</div>
+
+<div class="container">
+<img src="./img/cover-16-david.jpg" alt="cover4" width="300"/>
+  <div class="middle">
+   <a href="https://pubs.rsc.org/en/content/articlelanding/2016/sm/c6sm00485g#!divAbstract"> <div class="text">Richard et al. 2016.</div> </a>
+  </div>
+</div>
+
+<h1>Photography</h1>
+<style>
+* {
+  box-sizing: content-box;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 40%; /* IE 10 */
+  flex: 40%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+</style>
+
+<div class="row"> 
+  <div class="column">
+  <img src="./img/nikon1.jpg" alt="sunset" style="width:100%"/>
+  <img src="./img/nikon4.jpg" alt="kyoto" style="width:100%"/>
+  <img src="./img/nikon8.jpg" alt="piemonte" style="width:100%"/>
+  </div>
+  <div class="column">
+  <img src="./img/nikon5.jpg" alt="kyoto" style="width:100%"/>
+  <img src="./img/nikon9.jpg" alt="rome" style="width:100%"/>
+  </div>
+  <div class="column">
+  <img src="./img/nikon7.jpg" alt="kyoto" style="width:100%"/>
+  <img src="./img/nikon3.jpg" alt="cutepig" style="width:100%"/>
+  </div>
+  <div class="column">
+  <img src="./img/nikon6.jpg" alt="kyoto" style="width:100%"/>
+  <img src="./img/nikon2.jpg" alt="cologne" style="width:100%"/>
+  </div>
+</div>
+
+<p>More <a href="https://www.instagram.com/teo_campus/">here</a>.
+<!-- <a href="https://amylynnandrews.com/how-to-start-a-blog/"><img src="https://amylynnandrews.com/wp-content/uploads/2016/01/how-to-create-a-blog.jpg" width="30"/></a> --></p> 
+</div>
+</article>
+<hr />
+<article>
+  <div class="article_title">
+    <h1><a href="./articles/2019/04/18/cv/">CV</a></h1>
+  </div>
+<div class="article_text"> 
+   
+</div>
 </article>
 
 <footer>
