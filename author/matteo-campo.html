@@ -50,20 +50,51 @@
   <p>I write most of my coding projects in <i>C++</i> and/or <i>Python</i>.
 Here are some recent ones.</p>
 <h3>Rendara3D</h3>
-<p><i>Rendara3D</i> is a 3D rendering engine written in C++ and modern OpenGL.
-<img src="../img/mini-demo_instancing.jpg" alt="demo_inst" width="700"/></p>
-<p>You can download a demo <a href="../articles/2019/04/22/projects/Rendara3D.zip"><font color="blue">here</font></a> (requires Windows).
-Features include
+<p><i>Rendara3D</i> is a 3D rendering and physics engine that I wrote for learning purposes.
+It is written in C++ and modern OpenGL.</p>
+<!---
+Images:
+ - Something nice to see, wide
+ - shader editing gif, showing real time update
+ - box stacking with contact points shown
+ - shooting the stack down gif
+ - some completely different scene, with flying bullets?
+ - when spheres are available, toon shader.
+
+TODO:<img src="../img/mini-demo_instancing.jpg" alt="demo_inst" width="700"/>
+TODO:You can download a demo [<font color="blue">here</font>]({attach}/downloads/Rendara3D.zip) (requires Windows).
+<img src="../img/r3d_art.png" alt="r3d_art" width="600"/>
+--->
+
+<p><img src="../img/r3d_stack.gif" alt="r3d_stack" width="300"/>
+<img src="../img/r3d_shoot.gif" alt="r3d_shoot" width="300"/></p>
+<p>Features include
+<ul>
+<li> Instanced rendering, Shadows, Bloom, HDR.
+<li> Rigid-body physics: discrete collision detection and response.
+<li> Manifold generation using the Separating Axis Theorem
+<li> Box stacking
+<li> Entity-Component-System (ECS) based on archetypes for looping selected entities in a cache-friendly way
+<li> <a href="https://github.com/ocornut/imgui"><font color="blue">dear ImGui</font></a> interface for editing shaders at run-time, changing settings and debugging.
+</ul></p>
+<p><img src="../img/r3d_overview.gif" alt="r3d_overview" width="600"/></p>
+<p>You can visit the github page of the project <a href="https://github.com/physteo/R3D"><font color="blue">here</font></a>.</p>
+<p>I have studied several resources online for writing Rendara3D.
+For physics: Erin Catto's <a href="https://github.com/ocornut/imgui"><font color="blue">Box2D-lite</font></a>, Dirk Gregorius' talks at the <a href="https://www.gdcvault.com/search.php#&conference_id=&category=free&firstfocus=&keyword=dirk+gregorius"><font color="blue">GDC</font></a> and his  <a href="https://www.gamedev.net/profile/30524-dirk-gregorius/"><font color="blue">gamedev.net</font></a> posts.
+For rendering: Joey de Vries's  <a href="https://learnopengl.com/"><font color="blue">learnopengl.com</font></a>, TheCherno's <a href="https://www.youtube.com/watch?v=JxIZbV_XjAs&list=PLlrATfBNZ98dC-V-N3m0Go4deliWHPFwT"><font color="blue">videos</font></a> and ThinMatrix's <a href="https://www.youtube.com/watch?v=VS8wlS9hF8E&list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP"><font color="blue">videos</font></a>.
+For the ECS architecture: skypjacks's <a href="https://skypjack.github.io/tags/#ecs"><font color="blue">blog</font></a> and the bitsquid <a href="http://bitsquid.blogspot.com/2014/08/building-data-oriented-entity-system.html"><font color="blue">blog</font></a>.</p>
+<!---
 <ul>
 <li> Loading of <b>3D models</b>. </li>
 <li> Diffuse, Normal, Specular <b>textures</b>. </li>
 <li> Directional <b>lights</b>, point lights and flashlights.</li>
 <li> Directional and Omnidirectional <b>shadow maps</b>.</li>
 <li> <b>Instanced rendering</b> of models. </li>
-</ul></p>
-<p>You can visit the github page of the project <a href="https://github.com/physteo/Rendara3D"> <font color="blue">here</font></a>.</p>
-<p><img src="../img/shadows_demo_gif.gif" alt="demo_inst" width="200"/>
-<img src="../img/outBreak.gif" alt="demo_inst" width="200"/></p>
+</ul>
+<img src="../img/shadows_demo_gif.gif" alt="demo_inst" width="200"/>
+<img src="../img/outBreak.gif" alt="demo_inst" width="200"/>
+--->
+
 <p>&nbsp;
 &nbsp;
 &nbsp;
@@ -83,41 +114,25 @@ Features include
 <li> <b>Binary</b> format (HDF5) for saving files. </li>
 </ul>
 I have developed <i>Cells</i> in Japan, for <a href="https://arxiv.org/pdf/1901.06707.pdf"><font color="blue">this</font></a> scientific study.
-The github page of the project can be found <a href="https://github.com/physteo/cells"><font color="blue">here</font></a>.
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;</p>
-<h3>Physgood</h3>
-<p><i>Physgood</i> is a C++ physics engine for games.
-<img src="../img/mini-physgood.jpg" alt="physgood_show" width="600"/>
-It features
-<ul>
-<li> Integration of the equations of motion for particles (...soon for rigid bodies). </li>
-<li> <b>Continuous time detection</b> of sphere-sphere, sphere-edge, sphere-wall <b>collisions</b>. </li>
-<li> Acceleration of collision detection using fixed <b>space partitioning</b> and <b>hash mapping</b>.</li>
-<li> Collision response and <b>rigid body failsafe</b>. </li>
-</ul>
-Demo: <i>coming soon </i>.</p> 
+The github page of the project can be found <a href="https://github.com/physteo/cells"><font color="blue">here</font></a>.</p> 
 </div>
 </article>
 <hr />
 <article>
   <div class="article_title">
-    <h1><a href="../articles/2019/04/22/science/">Science</a></h1>
+    <h1><a href="../articles/2020/03/20/science/">Science</a></h1>
   </div>
 <div class="article_text"> 
-  <h3>Publications</h3>
-<p>My scientific interests are in <i>computational statistical mechanics</i>, which is a branch of physics that deals with systems of <b>many interacting bodies</b>.</p>
-<p>During my Ph.D. I have been researching the slow dynamics of <b>dense</b> liquids of <b>hard spheres</b>, and biology inspired <b>active matter</b>.</p>
+  <p>I have been doing research in <i>computational statistical mechanics</i>, which is a branch of physics dealing with the simulations of <b>many interacting bodies</b> using <b>Monte Carlo</b> and <b>Molecular Dynamics</b> techniques.</p>
+<p>Physical systems that I have researched during my Ph.D. include fluids of <b>hard spheres</b> and <b>active matter</b>.</p>
+<h3>Publications</h3>
 <p>Here you can find my publications</p>
 <ul>
-  <li> <a href="https://aip.scitation.org/doi/abs/10.1063/1.5134842" style="text-decoration: none"> Campo, M., & Speck, T. (2020). Dynamical coexistence in moderately polydisperse hard-sphere glasses. The Journal of Chemical Physics, 152(1), 014501.</a></li>
+  <li> <a href="https://aip.scitation.org/doi/abs/10.1063/1.5134842" style="text-decoration: none"> <b> Campo, M.</b>, & Speck, T. (2020). Dynamical coexistence in moderately polydisperse hard-sphere glasses. <i>The Journal of Chemical Physics</i>, 152(1), 014501.</a></li>
 </ul>
 
 <ul>
-  <li> <a href="https://doi.org/10.1039/C9SM00526A" style="text-decoration: none"> <b> Campo, M.</b>, Schnyder, S. K., Molina, J. J., Speck, T., &amp; Yamamoto, R. (2019). Spontaneous spatiotemporal ordering of shape oscillations enhances cell migration. Soft matter, 15(24), 4939-4946.</a></li>
+  <li> <a href="https://doi.org/10.1039/C9SM00526A" style="text-decoration: none"> <b> Campo, M.</b>, Schnyder, S. K., Molina, J. J., Speck, T., &amp; Yamamoto, R. (2019). Spontaneous spatiotemporal ordering of shape oscillations enhances cell migration. <i>Soft matter</i>, 15(24), 4939-4946.</a></li>
 </ul>
 
 <ul>
